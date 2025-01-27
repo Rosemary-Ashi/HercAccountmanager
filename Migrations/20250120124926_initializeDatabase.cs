@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace AccountManagement.Migrations
 {
     /// <inheritdoc />
-    public partial class TableAdded : Migration
+    public partial class initializeDatabase : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -89,6 +89,7 @@ namespace AccountManagement.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
+                    table.UniqueConstraint("AK_AspNetUsers_UserId", x => x.UserId);
                     table.ForeignKey(
                         name: "FK_AspNetUsers_Locations_LocationId",
                         column: x => x.LocationId,

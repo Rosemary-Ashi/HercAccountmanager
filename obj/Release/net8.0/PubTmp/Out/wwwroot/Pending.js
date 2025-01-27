@@ -1,38 +1,37 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const role = sessionStorage.getItem('roles');
-  const location = sessionStorage.getItem('locations');
-  const username = sessionStorage.getItem('usernames');
+    const role = sessionStorage.getItem('roles');
+    const location = sessionStorage.getItem('locations');
+    const username = sessionStorage.getItem('usernames');
 
-  if (!role || !username || !location) {
-    alert('User not authenticated or location data missing.');
-    window.location.href = 'login.html';
-    return;
-  }
-
-  document.querySelector('#username').textContent = username;
-  document.querySelector('#location').textContent = location;
-
-  async function FetchPending() {
-    try {
-        const response = await fetch(`/accountmanager/api/AssignmentRequest/pending`);
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      const datas = await response.json();
-      console.log('Fetched Pending Data', datas);
-      return datas;
-    } catch (error) {
-      console.error('Failed to fetch customers:', error);
-      return [];
+    if (!role || !username || !location) {
+        alert('User not authenticated or location data missing.');
+        window.location.href = 'login.html';
+        return;
     }
-  };
 
-  function renderAssign(datas) {
-    const result = document.getElementById('pendingtable')
-    result.innerHTML = datas.map((assign, index) => {
-      return ` 
+    document.querySelector('#username').textContent = username;
+    document.querySelector('#location').textContent = location;
+
+    async function FetchPending() {
+        try {
+            const response = await fetch(`/accountmanager/api/AssignmentRequest/pending`);
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            const datas = await response.json();
+            return datas;
+        } catch (error) {
+            console.error('Failed to fetch customers:', error);
+            return [];
+        }
+    };
+
+    function renderAssign(datas) {
+        const result = document.getElementById('pendingtable')
+        result.innerHTML = datas.map((assign, index) => {
+            return ` 
               <tr>
-              <td><input type="checkbox" class="tickCheckbox" data-id="${assign.assignmentRequestId}"></td>
+              
                   <td>${index + 1}</td>
                   <td>${assign.status}</td>
                   <td>${assign.lastname}</td>
@@ -43,159 +42,91 @@ document.addEventListener('DOMContentLoaded', () => {
                   
               </tr>
               `;
-    }).join('');
-  }
-/*<td><span class="timestamp" data-id="${assign.assignmentRequestId}"></span></td>*/
-  function populateFilters(Customerlocation, Customersmanager) {
-    const locationFilter = document.getElementById('locationfilter');
-    locationFilter.innerHTML = '<option value="">Location</option>';
-    Customerlocation.forEach(location => {
-      const option = document.createElement('option');
-      option.value = location;
-      option.textContent = location;
-      locationFilter.appendChild(option);
-    });
-
-    const bdOfficerFilter = document.getElementById('bdOfficerFilter');
-    bdOfficerFilter.innerHTML = '<option value="">Agent Assigned</option>';
-    Customersmanager.forEach(manager => {
-      const option = document.createElement('option');
-      option.value = manager;
-      option.textContent = manager;
-      bdOfficerFilter.appendChild(option);
-    });
-  }
-
-  function filterData(datafiltered, filters) {
-    return datafiltered.filter(item => {
-      const matchesLocation = filters.location === '' || item.location === filters.location;
-      const matchesBdOfficer = filters.bdOfficer === '' || item.bdOfficerName === filters.bdOfficer;
-      return matchesLocation && matchesBdOfficer;
-    });
-  }
-
-
-  async function handleAssign() {
-    const assignmentapproval = [];
-    const checkboxes = document.querySelectorAll('.tickCheckbox:checked');
-    let allValid = true;
-    console.log('is working');
-
-    checkboxes.forEach(checkbox => {
-      const row = checkbox.closest('tr');
-      const action = row.querySelector('.action-select').value;
-      const comment = row.querySelector('[data-comment]').value || "";
-      const id = checkbox.getAttribute('data-id');
-      const timestampElement = row.querySelector('.timestamp');
-
-      if (action && (action !== 'reject' || comment)) {
-        assignmentapproval.push({ action, id, comment });
-        timestampElement.textContent = new Date().toLocaleString();
-      } else {
-        allValid = false;
-        row.querySelector('.action-select').style.borderColor = 'red';
-      }
-    });
-
-    if (!allValid) {
-      alert('Please provide comment and approve or reject before submitting');
-      return;
-    }
-    if (assignmentapproval.length === 0) {
-      alert('No valid assignments Request');
-      return;
+        }).join('');
     }
 
-    for (const { action, id, comment } of assignmentapproval) {
-      const endpoint = action == 'reject'
-          ? `/accountmanager/api/AssignmentRequest/reject/${id}`
-          : `/accountmanager/api/AssignmentRequest/approve/${id}`;
-
-      const formdata = new FormData();
-      formdata.append('id', id)
-      formdata.append('comment', comment)
-      try {
-        console.log(comment)
-
-        const response = await fetch(endpoint, {
-          method: 'PUT',
-          // headers: {
-          //   'Content-Type': 'application/json'
-          // },
-          body: formdata,
+    function populateFilters(Customerlocation, Customersmanager) {
+        const locationFilter = document.getElementById('locationfilter');
+        locationFilter.innerHTML = '<option value="">Location</option>';
+        Customerlocation.forEach(location => {
+            const option = document.createElement('option');
+            option.value = location;
+            option.textContent = location;
+            locationFilter.appendChild(option);
         });
 
-        console.log(`Response for ${action} (ID: ${id}):`, response);
+        const bdOfficerFilter = document.getElementById('bdOfficerFilter');
+        bdOfficerFilter.innerHTML = '<option value="">Agent Assigned</option>';
+        Customersmanager.forEach(manager => {
+            const option = document.createElement('option');
+            option.value = manager;
+            option.textContent = manager;
+            bdOfficerFilter.appendChild(option);
+        });
+    }
 
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
+    function filterData(datafiltered, filters) {
+        return datafiltered.filter(item => {
+            const matchesLocation = filters.location === '' || item.location === filters.location;
+            const matchesBdOfficer = filters.bdOfficer === '' || item.bdOfficerName === filters.bdOfficer;
+            return matchesLocation && matchesBdOfficer;
+        });
+    }
+
+    async function init() {
+        const accounts = await FetchPending();
+        const allLocations = [...new Set(accounts.map(item => item.location))];
+        const allManagers = [...new Set(accounts.map(item => item.bdOfficerName))];
+        populateFilters(allLocations, allManagers);
+        renderAssign(accounts);
+
+        document.getElementById('locationfilter').addEventListener('change', () => applyFilters(accounts));
+        document.getElementById('bdOfficerFilter').addEventListener('change', () => applyFilters(accounts));
+
+        function applyFilters(data) {
+            const filters = {
+                location: document.getElementById('locationfilter').value,
+                bdOfficer: document.getElementById('bdOfficerFilter').value
+            };
+            const filteredData = filterData(data, filters);
+            renderAssign(filteredData);
         }
-        alert(`${action.charAt(0).toUpperCase() + action.slice(1)}d successfully!`);
-
-      } catch (error) {
-
-        alert(`Failed to ${action}. Check the console for more details.`);
-      }
-    }
-    await init();
-  }
-  document.getElementById('submitapproval').addEventListener('click', handleAssign);
-
-  async function init() {
-    const accounts = await FetchPending();
-    const allLocations = [...new Set(accounts.map(item => item.location))];
-    const allManagers = [...new Set(accounts.map(item => item.bdOfficerName))];
-    populateFilters(allLocations, allManagers);
-    renderAssign(accounts);
-
-    document.getElementById('locationfilter').addEventListener('change', () => applyFilters(accounts));
-    document.getElementById('bdOfficerFilter').addEventListener('change', () => applyFilters(accounts));
-
-    function applyFilters(data) {
-      const filters = {
-        location: document.getElementById('locationfilter').value,
-        bdOfficer: document.getElementById('bdOfficerFilter').value
-      };
-      const filteredData = filterData(data, filters);
-      renderAssign(filteredData);
     }
 
-  }
+    function searchFunction() {
+        const input = document.getElementById('searchWord');
+        const filter = input.value.toLowerCase();
+        const table = document.getElementById('pendingtable');
+        const rows = table.getElementsByTagName('tr');
 
-  function searchFunction() {
-    const input = document.getElementById('searchWord');
-    const filter = input.value.toLowerCase();
-    const table = document.getElementById('pendingtable');
-    const rows = table.getElementsByTagName('tr');
+        for (let i = 0; i < rows.length; i++) {
+            const cells = rows[i].getElementsByTagName('td');
+            let match = false;
 
-    for (let i = 0; i < rows.length; i++) {
-      const cells = rows[i].getElementsByTagName('td');
-      let match = false;
-
-      for (let j = 0; j < cells.length; j++) {
-        if (cells[j]) {
-          const cellText = cells[j].textContent || cells[j].innerText;
-          if (cellText.toLowerCase().indexOf(filter) > -1) {
-            match = true;
-            break;
-          }
+            for (let j = 0; j < cells.length; j++) {
+                if (cells[j]) {
+                    const cellText = cells[j].textContent || cells[j].innerText;
+                    if (cellText.toLowerCase().indexOf(filter) > -1) {
+                        match = true;
+                        break;
+                    }
+                }
+            }
+            rows[i].style.display = match ? '' : 'none';
         }
-      }
-      rows[i].style.display = match ? '' : 'none';
     }
-  }
-  document.getElementById('searchWord').addEventListener('keyup', searchFunction);
+    document.getElementById('searchWord').addEventListener('keyup', searchFunction);
 
-  window.addEventListener('load', init);
+    window.addEventListener('load', init);
 
-  function signouts() {
-    sessionStorage.clear();
-    document.cookie.split(';').forEach(function (c) {
-      document.cookie = c.trim().replace(/=.*$/, '=;expires=Thu, 01 Jan 1970 12:15:60 GMT');
-    });
-    window.location.href = 'login.html'
-  }
+    function signouts() {
+        sessionStorage.clear();
+        document.cookie.split(';').forEach(function (c) {
+            document.cookie = c.trim().replace(/=.*$/, '=;expires=Thu, 01 Jan 1970 12:15:60 GMT');
+        });
+        window.location.href = 'login.html'
+    }
 
-  document.getElementById('signout').addEventListener('click', signouts);
+    document.getElementById('signout').addEventListener('click', signouts);
 
 });

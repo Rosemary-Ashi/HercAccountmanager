@@ -60,21 +60,21 @@
             <tbody id="teamleadtableDash"></tbody>
 
         </table>
-        <div id="pagination-controls">
-            <button id="previous-button">Previous</button>
-            <button id="next-button">Next</button>
-        </div>
-        </form>
+        <div id="pagination-controls"></div>
     </div>
 
 
     <footer id="foot" class="footer">
-        <p>GTPM &copy; 2024</p>
-        <p><a style="color:whitesmoke" href="mailto:"></a>
+        <p>GTPM &copy; <span id="current-year"></span></p>
+        <p>
+            <a style="color:whitesmoke" href="mailto:"></a>
         </p>
     </footer>
 
     <script src="bdTeamLead.js" type="text/javascript"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>

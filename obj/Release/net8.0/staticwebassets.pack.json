@@ -1,332 +1,336 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\.gitignore",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\.gitignore",
       "PackagePath": "staticwebassets\\.gitignore"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Assign.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Assign.html",
       "PackagePath": "staticwebassets\\Assign.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Assigned.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Assigned.html",
       "PackagePath": "staticwebassets\\Assigned.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\BDhead.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\BDhead.html",
       "PackagePath": "staticwebassets\\BDhead.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\BDteamlead.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\BDteamlead.html",
       "PackagePath": "staticwebassets\\BDteamlead.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\.gitignore",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\.gitignore",
       "PackagePath": "staticwebassets\\Backup\\.gitignore"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\Assign.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\Assign.html",
       "PackagePath": "staticwebassets\\Backup\\Assign.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\Assigned.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\Assigned.html",
       "PackagePath": "staticwebassets\\Backup\\Assigned.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\BDhead.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\BDhead.html",
       "PackagePath": "staticwebassets\\Backup\\BDhead.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\BDteamlead.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\BDteamlead.html",
       "PackagePath": "staticwebassets\\Backup\\BDteamlead.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\Images\\log.png",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\Images\\log.png",
       "PackagePath": "staticwebassets\\Backup\\Images\\log.png"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\Images\\loggo.svg",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\Images\\loggo.svg",
       "PackagePath": "staticwebassets\\Backup\\Images\\loggo.svg"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\Images\\logo.png",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\Images\\logo.png",
       "PackagePath": "staticwebassets\\Backup\\Images\\logo.png"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\Images\\logs.png",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\Images\\logs.png",
       "PackagePath": "staticwebassets\\Backup\\Images\\logs.png"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\Images\\practice.png",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\Images\\practice.png",
       "PackagePath": "staticwebassets\\Backup\\Images\\practice.png"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\PasswordReset.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\PasswordReset.html",
       "PackagePath": "staticwebassets\\Backup\\PasswordReset.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\Pending.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\Pending.html",
       "PackagePath": "staticwebassets\\Backup\\Pending.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\Pending.js",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\Pending.js",
       "PackagePath": "staticwebassets\\Backup\\Pending.js"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\README.md",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\README.md",
       "PackagePath": "staticwebassets\\Backup\\README.md"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\Rejected.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\Rejected.html",
       "PackagePath": "staticwebassets\\Backup\\Rejected.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\Rejected.js",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\Rejected.js",
       "PackagePath": "staticwebassets\\Backup\\Rejected.js"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\admin.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\admin.html",
       "PackagePath": "staticwebassets\\Backup\\admin.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\admin.js",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\admin.js",
       "PackagePath": "staticwebassets\\Backup\\admin.js"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\assign.js",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\assign.js",
       "PackagePath": "staticwebassets\\Backup\\assign.js"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\assigned.js",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\assigned.js",
       "PackagePath": "staticwebassets\\Backup\\assigned.js"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\assignedBDHead.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\assignedBDHead.html",
       "PackagePath": "staticwebassets\\Backup\\assignedBDHead.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\bdTeamLead.js",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\bdTeamLead.js",
       "PackagePath": "staticwebassets\\Backup\\bdTeamLead.js"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\bdofficer.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\bdofficer.html",
       "PackagePath": "staticwebassets\\Backup\\bdofficer.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\bdofficer.js",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\bdofficer.js",
       "PackagePath": "staticwebassets\\Backup\\bdofficer.js"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\customer.js",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\customer.js",
       "PackagePath": "staticwebassets\\Backup\\customer.js"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\customers.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\customers.html",
       "PackagePath": "staticwebassets\\Backup\\customers.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\dashboard.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\dashboard.html",
       "PackagePath": "staticwebassets\\Backup\\dashboard.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\design.css",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\design.css",
       "PackagePath": "staticwebassets\\Backup\\design.css"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\home.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\home.html",
       "PackagePath": "staticwebassets\\Backup\\home.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\index.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\index.html",
       "PackagePath": "staticwebassets\\Backup\\index.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\login.css",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\login.css",
       "PackagePath": "staticwebassets\\Backup\\login.css"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\login.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\login.html",
       "PackagePath": "staticwebassets\\Backup\\login.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\login.js",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\login.js",
       "PackagePath": "staticwebassets\\Backup\\login.js"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\test.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\test.html",
       "PackagePath": "staticwebassets\\Backup\\test.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\unassigned.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\unassigned.html",
       "PackagePath": "staticwebassets\\Backup\\unassigned.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\unassigned.js",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Backup\\unassigned.js",
       "PackagePath": "staticwebassets\\Backup\\unassigned.js"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Comments.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Comments.html",
       "PackagePath": "staticwebassets\\Comments.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Images\\log.png",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Images\\log.png",
       "PackagePath": "staticwebassets\\Images\\log.png"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Images\\loggo.svg",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Images\\loggo.svg",
       "PackagePath": "staticwebassets\\Images\\loggo.svg"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Images\\logo.png",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Images\\logo.png",
       "PackagePath": "staticwebassets\\Images\\logo.png"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Images\\logs.png",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Images\\logs.png",
       "PackagePath": "staticwebassets\\Images\\logs.png"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Images\\practice.png",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Images\\practice.png",
       "PackagePath": "staticwebassets\\Images\\practice.png"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\PasswordReset.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\PasswordReset.html",
       "PackagePath": "staticwebassets\\PasswordReset.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Pending.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Pending.html",
       "PackagePath": "staticwebassets\\Pending.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Pending.js",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Pending.js",
       "PackagePath": "staticwebassets\\Pending.js"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\README.md",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\README.md",
       "PackagePath": "staticwebassets\\README.md"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Rejected.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Rejected.html",
       "PackagePath": "staticwebassets\\Rejected.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Rejected.js",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Rejected.js",
       "PackagePath": "staticwebassets\\Rejected.js"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Role.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Role.html",
       "PackagePath": "staticwebassets\\Role.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Role.js",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\Role.js",
       "PackagePath": "staticwebassets\\Role.js"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\User.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\User.html",
       "PackagePath": "staticwebassets\\User.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\admin.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\admin.html",
       "PackagePath": "staticwebassets\\admin.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\admin.js",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\admin.js",
       "PackagePath": "staticwebassets\\admin.js"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\adminDashboard.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\adminDashboard.html",
       "PackagePath": "staticwebassets\\adminDashboard.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\admindashboard.js",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\admindashboard.js",
       "PackagePath": "staticwebassets\\admindashboard.js"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\assign.js",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\assign.js",
       "PackagePath": "staticwebassets\\assign.js"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\assigned.js",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\assigned.js",
       "PackagePath": "staticwebassets\\assigned.js"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\assignedBDHead.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\assignedBDHead.html",
       "PackagePath": "staticwebassets\\assignedBDHead.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\bdTeamLead.js",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\bdTeamLead.js",
       "PackagePath": "staticwebassets\\bdTeamLead.js"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\bdofficer.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\bdofficer.html",
       "PackagePath": "staticwebassets\\bdofficer.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\bdofficer.js",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\bdofficer.js",
       "PackagePath": "staticwebassets\\bdofficer.js"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\comments.js",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\comments.js",
       "PackagePath": "staticwebassets\\comments.js"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\customer.js",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\customer.js",
       "PackagePath": "staticwebassets\\customer.js"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\customers.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\customers.html",
       "PackagePath": "staticwebassets\\customers.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\dashboard.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\dashboard.html",
       "PackagePath": "staticwebassets\\dashboard.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\design.css",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\design.css",
       "PackagePath": "staticwebassets\\design.css"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\home.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\home.html",
       "PackagePath": "staticwebassets\\home.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\index.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\login.css",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\login.css",
       "PackagePath": "staticwebassets\\login.css"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\login.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\login.html",
       "PackagePath": "staticwebassets\\login.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\login.js",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\login.js",
       "PackagePath": "staticwebassets\\login.js"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\test.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\test.html",
       "PackagePath": "staticwebassets\\test.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\unassigned.html",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\unassigned.html",
       "PackagePath": "staticwebassets\\unassigned.html"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\unassigned.js",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\unassigned.js",
       "PackagePath": "staticwebassets\\unassigned.js"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\user.css",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\user.css",
       "PackagePath": "staticwebassets\\user.css"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\user.js",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\user.js",
       "PackagePath": "staticwebassets\\user.js"
     },
     {
-      "Id": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\users.js",
+      "Id": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\users.js",
       "PackagePath": "staticwebassets\\users.js"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.AccountManagement.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.AccountManagement.Microsoft.AspNetCore.StaticWebAssets.props",

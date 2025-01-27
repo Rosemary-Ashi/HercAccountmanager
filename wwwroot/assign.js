@@ -14,12 +14,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   async function FetchPending() {
     try {
-        const response = await fetch(`/api/AssignmentRequest/pending`);
+        const response = await fetch(`/accountmanager/api/AssignmentRequest/pending`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       const datas = await response.json();
-      console.log('Fetched Pending Data', datas);
       return datas;
     } catch (error) {
       console.error('Failed to fetch customers:', error);
@@ -85,7 +84,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const assignmentapproval = [];
     const checkboxes = document.querySelectorAll('.tickCheckbox:checked');
     let allValid = true;
-    // console.log('is working');
 
     checkboxes.forEach(checkbox => {
       const row = checkbox.closest('tr');
@@ -104,7 +102,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-
     if (!allValid) {
       alert('Please provide comment and approve or reject before submitting');
       return;
@@ -114,26 +111,19 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    for (const { action, id, comment } of assignmentapproval) {
+    for (const { action, id, comment } of assignmentapproval) { //Accept or Reject
       const endpoint = action == 'reject'
-          ? `/api/AssignmentRequest/reject/${id}`
-          : `/api/AssignmentRequest/approve/${id}`;
+          ? `/accountmanager/api/AssignmentRequest/reject/${id}`
+          : `/accountmanager/api/AssignmentRequest/approve/${id}`;
 
       const formdata = new FormData();
       formdata.append('id', id)
       formdata.append('comment', comment)
       try {
-        console.log(comment)
-
         const response = await fetch(endpoint, {
           method: 'PUT',
-          // headers: {
-          //   'Content-Type': 'application/json'
-          // },
           body: formdata,
         });
-
-        console.log(`Response for ${action} (ID: ${id}):`, response);
 
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);

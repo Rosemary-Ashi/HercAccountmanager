@@ -28,6 +28,7 @@
 
         <h1 style="color:#4d4d4d;">Customers</h1>
         <input type="text" id="searchWord" placeholder="Search" aria-label="Search through customer records" />
+        <div id="paginations-metadata"></div>
         <table id="customertable">
             <thead>
                 <tr class="tablehead">
@@ -48,14 +49,18 @@
             <tbody id="bdofficertable"></tbody>
 
         </table>
+        <div id="pagination-controls"></div>
     </div>
 
     <footer id="foot" class="footer">
-        <p>GTPM &copy; 2024</p>
+        <p>GTPM &copy; <span id="current-year"></span></p>
         <p><a style="color:whitesmoke" href="mailto:"></a></p>
     </footer>
 
     <script src="bdofficer.js" type="text/javascript"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 
 </body>
 

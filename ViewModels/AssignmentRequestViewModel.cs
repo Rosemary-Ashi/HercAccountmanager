@@ -17,7 +17,7 @@ namespace AccountManagement.ViewModels
         public string? Location { get; set; }
         public string? BdOfficerName { get; set; }
         public string BdOfficerId { get; set; }
-        public string? CommentDetails { get; set; }
+        public ICollection<Comment>? CommentDetails { get; set; }
         public string AUM { get; set; }
     }
 }

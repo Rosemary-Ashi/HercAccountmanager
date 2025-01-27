@@ -15,8 +15,9 @@
             <nav>
                 <div class="top">
                     <ul class="top-nav">
-                        <h2><a style="color:#4d4d4d; margin-right: 30px" href="BDteamlead.html">Team Lead</a> <br><span
-                                id="location"></span></h2>
+                        <h2>
+                            <a style="color:#4d4d4d; margin-right: 30px" href="BDteamlead.html">Team Lead</a> <br><span id="location"></span>
+                        </h2>
                         <li><a href="dashboard.html">Dashboard</a></li>
                         <li><a href="Assigned.html">Assigned</a></li>
                         <li><a href="unassigned.html">Unassigned</a></li>
@@ -37,33 +38,40 @@
         <table id="customertable">
             <thead>
                 <tr class="tablehead">
-                    <!--<th>Tick</th>-->
                     <th>SN</th>
                     <th>Status</th>
                     <th>Surname</th>
                     <th>First Name</th>
-                    <th><select id="locationfilter">
+                    <th>
+                        <select id="locationfilter">
                             <option value="">Location</option>
-                        </select></th>
+                        </select>
+                    </th>
                     <th>AUM</th>
-                    <th><select id="bdOfficerFilter">
+                    <th>
+                        <select id="bdOfficerFilter">
                             <option value="">Agent Assigned</option>
-                        </select></th>
+                        </select>
+                    </th>
                 </tr>
             </thead>
 
             <tbody id="pendingtable"></tbody>
 
-        </table>        
+        </table>
     </div>
 
     <footer id="foot" class="footer">
-        <p>GTPM &copy; 2024</p>
-        <p><a style="color:whitesmoke" href="mailto:"></a>
+        <p>GTPM &copy; <span id="current-year"></span></p>
+        <p>
+            <a style="color:whitesmoke" href="mailto:"></a>
         </p>
     </footer>
 
     <script src="Pending.js" type="text/javascript"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>

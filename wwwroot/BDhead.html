@@ -15,8 +15,9 @@
             <nav>
                 <div class="top">
                     <ul class="top-nav">
-                        <h2><a style="color:#4d4d4d; margin-right: 30px" href="BDhead.html">BD Head</a><br><span
-                                id="location"></span></h2>
+                        <h2>
+                            <a style="color:#4d4d4d; margin-right: 30px" href="BDhead.html">BD Head</a><br><span id="location"></span>
+                        </h2>
                         <li><a href="customers.html" class="active">Dashboard</a></li>
                         <li><a href="assignedBDHead.html">Assigned</a></li>
                         <li><a href="Assign.html">Pending</a></li>
@@ -39,14 +40,18 @@
                     <th>SN</th>
                     <th>Surname</th>
                     <th>First Name</th>
-                    <th><select id="locationFilter">
+                    <th>
+                        <select id="locationFilter">
                             <option value="">Location</option>
-                        </select></th>
+                        </select>
+                    </th>
                     <th>AUM</th>
-                    <th><select id="bdOfficerFilter">
+                    <th>
+                        <select id="bdOfficerFilter">
                             <option value="">Account Manager</option>
-                        </select></th>
-                        <th>Comments</th>
+                        </select>
+                    </th>
+                    <th>Comments</th>
                 </tr>
             </thead>
 
@@ -56,12 +61,16 @@
     </div>
 
     <footer id="foot" class="footer">
-        <p>GTPM &copy; 2024</p>
-        <p><a style="color:whitesmoke" href="mailto:"></a>
+        <p>GTPM &copy; <span id="current-year"></span></p>
+        <p>
+            <a style="color:whitesmoke" href="mailto:"></a>
         </p>
     </footer>
 
     <script src="assigned.js" type="text/javascript"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>

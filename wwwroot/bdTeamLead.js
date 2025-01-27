@@ -18,28 +18,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     /*****************************************BEGINNING OF ASSIGNED API***************************************************/
-    //async function FetchCustomers() {
-    //    try {
-    //        const response = await fetch(`/accountmanager/api/Customer/${locationIdss}/Assigned`);
-    //        if (!response.ok) {
-    //            throw new Error(`HTTP error! status: ${response.status}`);
-    //        }
-    //        const data = await response.json();
-    //        console.log('Fetched Data', data);
-    //        return data;
-    //    } catch (error) {
-    //        console.error('Failed to fetch customers:', error);
-    //        return [];
-    //    }
-    //};
+
     async function FetchCustomers(pageNumber = 1, pageSize = 10) {
         try {
-            const response = await fetch(`/api/Customer/${locationIdss}/Assigned?pageNumber=${pageNumber}&pageSize=${pageSize}`);
+            const response = await fetch(`/accountmanager/api/Customer/${locationIdss}/Assigned?pageNumber=${pageNumber}&pageSize=${pageSize}`);
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             const data = await response.json();
-            console.log('Fetched Data', data);
             return data;
         } catch (error) {
             console.error('Failed to fetch customers:', error);
@@ -144,10 +130,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 bdOfficers: document.getElementById('bdOfficerFilter').value
             };
             const filteredData = filterData(data, filters);
-            console.log(filterData)
             renderAssigned(filteredData);
         }
-
     }
 
     function searchFunctions() {
@@ -178,28 +162,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     /*****************************************BEGINNING OF DASHBOARD API***************************************************/
-    //async function FetchCustomerDashboard() {
-    //    try {
-    //        const response = await fetch(`/accountmanager/api/Customer`);
-    //        if (!response.ok) {
-    //            throw new Error(`HTTP error! status: ${response.status}`);
-    //        }
-    //        const dataDash = await response.json();
-    //        console.log('Fetched Data', dataDash);
-    //        return dataDash;
-    //    } catch (error) {
-    //        console.error('Failed to fetch customers:', error);
-    //        return [];
-    //    }
-    //};
+
     async function FetchCustomerDashboard(pageNumber = 1, pageSize = 10) {
         try {
-            const response = await fetch(`/api/Customer/?pageNumber=${pageNumber}&pageSize=${pageSize}`);
+            const response = await fetch(`/accountmanager/api/Customer/?pageNumber=${pageNumber}&pageSize=${pageSize}`);
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             const dataDash = await response.json();
-            console.log('Fetched Data', dataDash);
             return dataDash;
         } catch (error) {
             console.error('Failed to fetch customers:', error);
@@ -295,19 +265,7 @@ document.addEventListener('DOMContentLoaded', () => {
             renderAssignedDash(filteredData);
         }
     }
-    //async function initAssignedDash() {
-    //    const assignedCustomerDash = await FetchCustomerDashboard();
-    //    const allManagersDash = [...new Set(assignedCustomerDash.data.map(item => item.bdOfficer))]; // Access the 'data' property
-    //    populateFilters(allManagersDash);
-    //    renderAssignedDash(assignedCustomerDash.data); // Access the 'data' property
-    //    document.getElementById('bdOfficerFilter').addEventListener('change', () => applyFilters(assignedCustomerDash.data)); // Access the 'data' property
 
-    //    function applyFilters(dataDash) {
-    //        const filters = { bdOfficers: document.getElementById('bdOfficerFilter').value };
-    //        const filteredData = filterDataDash(dataDash, filters);
-    //        renderAssignedDash(filteredData);
-    //    }
-    //}
     async function initAssignedDash() {
         const assignedCustomerDash = await FetchCustomerDashboard();
         const allManagersDash = [...new Set(assignedCustomerDash.data.map(item => item.bdOfficer))];

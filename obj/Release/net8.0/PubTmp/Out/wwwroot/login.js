@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(response => response.json())
             .then(data => {
                 if (data) {
-                    console.log(data)
+
                     localStorage.setItem('logindata', data);
                     sessionStorage.setItem('roles', data.userData.role);
                     sessionStorage.setItem('locations', data.userData.location);
@@ -47,16 +47,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     sessionStorage.setItem('agentcode', data.userData.agentcode);
 
 
-                    // Redirect to another page or perform other actions
-                    console.log(data)
+                    // Redirect to another page
+
                     if (data.userData.role === 'bdofficer') {
                         window.location.href = 'bdofficer.html'; //redirect
                     } else if (data.userData.role === 'bdteamlead') {
                         window.location.href = 'bdteamlead.html'; //redirect
                     } else if (data.userData.role === 'bdhead') {
                         window.location.href = 'bdhead.html'; //redirect
-                    } else if (data.userData.role === 'admin') {
-                        window.location.href = 'admin.html'; //redirect
+                    } else if (data.userData.role === 'Admin') {
+                        window.location.href = 'adminDashboard.html'; //redirect
                     } else {
                         alert('Are you a Scammer? How did you get an account?')
                         window.location.href = '/';

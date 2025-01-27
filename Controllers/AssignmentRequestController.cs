@@ -226,7 +226,7 @@ namespace AccountManagement.Controllers
                     BdOfficerName = ar.Customer.AssignedAgent.Name,
                     Location = ar.Customer.Location.LocationName,
                     AUM = ar.Customer.AUM,
-                    CommentDetails = ar.Comments.CommentDetails,
+                    CommentDetails = ar.Customer.CommentDetails,
                 })
                 .ToListAsync();
 
@@ -252,7 +252,7 @@ namespace AccountManagement.Controllers
                     BdOfficerName = ar.Customer.AssignedAgent.Name,
                     Location = ar.Customer.Location.LocationName,
                     AUM = ar.Customer.AUM,
-                    CommentDetails=ar.Comments.CommentDetails,
+                    CommentDetails=ar.Customer.CommentDetails,
                 })
                 .ToListAsync();
 
@@ -265,6 +265,7 @@ namespace AccountManagement.Controllers
             var assignmentRequests = await _context.AssignmentRequests
                 .Include(ar => ar.Customer)
                 .Include(ar => ar.AssignedAgent)
+                //.Include(ar => ar.Comments)
                 .Where(ar => ar.Status != "Approved")
                 .Select(ar => new AssignmentRequestViewModel
                 {
@@ -278,7 +279,7 @@ namespace AccountManagement.Controllers
                     BdOfficerName = _context.Users.FirstOrDefault(u => u.AgentCode == ar.BdOfficerId).Name,
                     Location = ar.Customer.Location.LocationName,
                     AUM = ar.Customer.AUM,
-                    CommentDetails = ar.Comments.CommentDetails,
+                    CommentDetails = ar.Customer.CommentDetails,
                 })
                 .ToListAsync();
 

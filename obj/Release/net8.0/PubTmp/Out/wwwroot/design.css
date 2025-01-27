@@ -17,17 +17,17 @@ nav {
     width: auto auto;
 }
 
-nav a {
-    text-decoration: none;
-    color: white;
-    display: inline-block;
-    /*keeps menu in one line*/
-}
+    nav a {
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        /*keeps menu in one line*/
+    }
 
-nav a:hover {
-    color: #4d4d4d;
-    text-indent: 10px;
-}
+        nav a:hover {
+            color: #4d4d4d;
+            text-indent: 10px;
+        }
 
 .top-nav {
     display: flex;
@@ -36,11 +36,11 @@ nav a:hover {
     list-style: none;
 }
 
-.top-nav li {
-    padding: 20px;
-    background-color: #cd5826;
-    margin: 0;
-}
+    .top-nav li {
+        padding: 20px;
+        background-color: #cd5826;
+        margin: 0;
+    }
 
 #logo {
     width: 120px;
@@ -96,11 +96,12 @@ body {
     box-sizing: border-box;
 }
 
-table{
-    width:100%;
+table {
+    width: 100%;
     table-layout: auto;
     border-collapse: collapse;
 }
+
 th,
 td {
     border: 1px solid #666666;
@@ -134,10 +135,10 @@ td {
     border-radius: 10px;
 }
 
-.signout:hover {
-    background-color: #4d4d4d;
-    color: white;
-}
+    .signout:hover {
+        background-color: #4d4d4d;
+        color: white;
+    }
 
 .footer {
     text-align: center;
@@ -159,13 +160,13 @@ td {
     width: 10%;
     margin: auto;
     margin-top: 30px;
-    border: 3px solid #434a51;
+    border: 2px solid #434a51;
     background-color: white;
     color: #434a51;
     border-radius: 7px;
 }
 
-#exportbtn{
+#exportbtn {
     width: 10%;
     margin: auto;
     margin-top: 30px;
@@ -175,25 +176,69 @@ td {
     border-radius: 7px;
 }
 
-#exportbtn:hover{
-    background-color: #f74200;
-    color: azure;
-    border: 3px solid #f74200;
+    #exportbtn:hover {
+        background-color: #f74200;
+        color: azure;
+        border: 3px solid #f74200;
+    }
+
+.button-group {
+    display: flex; /* Align items horizontally */
+    gap: 8%; /* Add spacing between buttons */
+    margin-bottom: 1px;
+    margin-top: -9px;
 }
+
+    .button-group button {
+        flex-shrink: 0; /* Prevent buttons from shrinking */
+    }
 
 #submitapproval {
     width: 10%;
-    margin-left: auto;
-    border: 3px solid #434a51;
+    margin-block: 5px;
+    border: 2px solid #434a51;
+    border-radius: 10px;
+    background-color: white;
+    color: #434a51;
+    align-items: center;
+}
+
+    #submitapproval:hover {
+        background-color: #f74200;
+        color: azure;
+        border: 3px solid #f74200;
+    }
+
+#approveAll {
+    width: 54%;
+    margin-block: 5px;
+    border: 2px solid #434a51;
+    border-radius: 10px;
     background-color: white;
     color: #434a51;
 }
 
-#submitapproval:hover {
-    background-color: #f74200;
-    color: azure;
-    border: 3px solid #f74200;
+    #approveAll:hover {
+        background-color: #f74200;
+        color: azure;
+        border: 3px solid #f74200;
+        width: 54%;
+    }
+
+#rejectAll {
+    width: 50%;
+    margin-block: 5px;
+    border: 2px solid #434a51;
+    border-radius: 10px;
+    background-color: white;
+    color: #434a51;
 }
+
+    #rejectAll:hover {
+        background-color: #f74200;
+        color: azure;
+        border: 3px solid #f74200;
+    }
 
 .comment-input {
     width: 100%;
@@ -225,14 +270,14 @@ td {
     padding: 20px;
 }
 
-.updates ul {
-    list-style-type: none;
-    padding: 0;
-}
+    .updates ul {
+        list-style-type: none;
+        padding: 0;
+    }
 
-.updates li {
-    margin-bottom: 10px;
-}
+    .updates li {
+        margin-bottom: 10px;
+    }
 
 /* Features Overview Section */
 .features {
@@ -281,21 +326,21 @@ td {
         /* Stack nav items vertically on small screens */
     }
 
-    .top-nav li {
-        width: 100%;
-        /* Full width for each menu item */
-    }
+        .top-nav li {
+            width: 100%;
+            /* Full width for each menu item */
+        }
 
     #searchWord {
         width: 80%;
         /* Wider input box for smaller screens */
     }
 
-    table, th, td{
+    table, th, td {
         font-size: 14px;
     }
 }
 
-*{
+* {
     box-sizing: border-box;
 }

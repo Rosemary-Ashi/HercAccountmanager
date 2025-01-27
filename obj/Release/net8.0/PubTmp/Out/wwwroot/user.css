@@ -11,10 +11,9 @@ form {
 .formcontainer {
     padding: 8px;
     text-align: center;
-
 }
 
-input[type=email],input[type=text],
+input[type=email], input[type=text],
 input[type=password] {
     width: 40%;
     display: block;
@@ -54,13 +53,13 @@ input[type=password] {
     color: #f74200;
 }
 
-#password-requirements li.valid {
-    color: green;
-}
+    #password-requirements li.valid {
+        color: green;
+    }
 
-#password-requirements li.invalid {
-    color: red;
-}
+    #password-requirements li.invalid {
+        color: red;
+    }
 
 button {
     padding: 3px;
@@ -75,8 +74,8 @@ button {
     align-items: center;
 }
 
-button:hover {
-    background-color: white;
-    color: #f74200;
-    font-weight: bold;
-}
+    button:hover {
+        background-color: white;
+        color: #f74200;
+        font-weight: bold;
+    }

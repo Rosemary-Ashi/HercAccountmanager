@@ -38,24 +38,31 @@
 
         <div class="formcontainer">
 
-            <button style="background-color:white;" type="submit"><a style="color:#f74200; text-decoration: none;"
-                    href="login.html"> Login</a></button>
+            <button style="background-color:white;" type="submit">
+                <a style="color:#f74200; text-decoration: none;"
+                   href="login.html"> Login</a>
+            </button>
         </div>
 
         <section class="contact">
             <h2>Contact Us</h2>
-            <p>If you have any questions or need assistance, feel free to send an email to <a style="color:#f74200"
-                    href="mailto:ict@gtpensionmanagers.com">us</a>.</p>
+            <p>
+                If you have any questions or need assistance, feel free to send an email to <a style="color:#f74200"
+                                                                                               href="mailto:ict@gtpensionmanagers.com">us</a>.
+            </p>
         </section>
 
     </form>
 
     <footer id="foot" class="footer">
-        <p>GTPM &copy; 2024</p>
+        <p>GTPM &copy; <span id="current-year"></span></p>
         <p><a style="color:whitesmoke" href="mailto:"></a></p>
     </footer>
 
     <script src="login.js"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>

@@ -24,10 +24,6 @@
     <None Include="wwwroot\login.html" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Migrations\" />
-  </ItemGroup>
-
 
 
 </Project>

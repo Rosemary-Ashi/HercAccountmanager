@@ -53,19 +53,25 @@
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
-                </select required><br>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                </select><br>
             </span>
 
             <span>
                 <label for="password"><b>Password</b></label>
                 <input type="password" placeholder="Enter password" id="password" title="Please enter strong password"
-                    required><br>
+                       required><br>
             </span>
 
             <span>
                 <label for="password"><b>Confirim Password</b></label>
                 <input type="password" placeholder="Confirim password" id="password2"
-                    title="Please enter strong password" required></span>
+                       title="Please enter strong password" required>
+            </span>
 
 
             <button type="button" id="submit">Create User</button>
@@ -83,33 +89,17 @@
 
     </form>
 
-    <!-- <h2 style="color:#4d4d4d;">User Details</h2>
-        <input type="text" id="searchWord" placeholder="Search" />
-        <table id="customertable">
-            <thead>
-                <tr class="tablehead">
-                    <th>SN</th>
-                    <th>Username</th>
-                    <th>Agent Code</th>
-                    <th>Surname</th>
-                    <th>First Name</th>
-                    <th>Location</th>
-                    <th>Email Address</th>
-                </tr>
-            </thead>
-
-            <tbody id="userDetailsTable"></tbody>
-
-        </table> -->
-
     <!-- </div> -->
 
     <footer id="foot" class="footer">
-        <p>GTPM &copy; 2024</p>
+        <p>GTPM &copy; <span id="current-year"></span></p>
         <p><a style="color:whitesmoke" href="mailto:"></a></p>
     </footer>
 
     <script src="user.js" type="text/javascript"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>

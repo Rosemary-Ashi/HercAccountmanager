@@ -62,11 +62,14 @@
     </form>
 
     <footer id="foot" class="footer">
-        <p>GTPM &copy; 2024</p>
+        <p>GTPM &copy; <span id="current-year"></span></p>
         <p><a style="color:whitesmoke" href="mailto:ict@gtpensionmanagers.com"></a></p>
     </footer>
 
     <script src="Role.js" type="text/javascript"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>

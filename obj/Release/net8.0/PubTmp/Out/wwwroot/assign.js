@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       const datas = await response.json();
-      console.log('Fetched Pending Data', datas);
       return datas;
     } catch (error) {
       console.error('Failed to fetch customers:', error);
@@ -51,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
     }).join('');
   }
-
+ 
   function populateFilters(Customerlocation, Customersmanager) {
     const locationFilter = document.getElementById('locationfilter');
     locationFilter.innerHTML = '<option value="">Location</option>';
@@ -85,7 +84,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const assignmentapproval = [];
     const checkboxes = document.querySelectorAll('.tickCheckbox:checked');
     let allValid = true;
-    // console.log('is working');
 
     checkboxes.forEach(checkbox => {
       const row = checkbox.closest('tr');
@@ -103,6 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
+
     if (!allValid) {
       alert('Please provide comment and approve or reject before submitting');
       return;
@@ -112,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    for (const { action, id, comment } of assignmentapproval) {
+    for (const { action, id, comment } of assignmentapproval) { //Accept or Reject
       const endpoint = action == 'reject'
           ? `/accountmanager/api/AssignmentRequest/reject/${id}`
           : `/accountmanager/api/AssignmentRequest/approve/${id}`;
@@ -121,17 +120,10 @@ document.addEventListener('DOMContentLoaded', () => {
       formdata.append('id', id)
       formdata.append('comment', comment)
       try {
-        console.log(comment)
-
         const response = await fetch(endpoint, {
           method: 'PUT',
-          // headers: {
-          //   'Content-Type': 'application/json'
-          // },
           body: formdata,
         });
-
-        console.log(`Response for ${action} (ID: ${id}):`, response);
 
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -144,8 +136,38 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
     await init();
-  }
-  document.getElementById('submitapproval').addEventListener('click', handleAssign);
+    }
+
+    const selectallCheckbox = document.getElementById('selectAll');
+    const approveallCheckbox = document.getElementById('approveAll');
+    const rejecteallCheckbox = document.getElementById('rejectAll');
+
+    selectallCheckbox.addEventListener('change', () => {
+        const checkboxes = document.querySelectorAll('.tickCheckbox');
+        checkboxes.forEach(checkbox => {
+            checkbox.checked = selectallCheckbox.checked;
+        });
+    });
+    approveallCheckbox.addEventListener('click', () => {
+        const rows = document.querySelectorAll('tbody tr');
+        rows.forEach(row => {
+            const actionSelect = row.querySelector('.action-select');
+            actionSelect.value = 'approve'; // Set action to approve
+            row.querySelector('[data-comment]').value = 'Approved by bulk action'; // Clear comment if any
+        });
+    });
+
+    // Handle "Reject All"
+    rejecteallCheckbox.addEventListener('click', () => {
+        const rows = document.querySelectorAll('tbody tr');
+        rows.forEach(row => {
+            const actionSelect = row.querySelector('.action-select');
+            actionSelect.value = 'reject'; // Set action to reject
+            const commentField = row.querySelector('[data-comment]');
+            commentField.value = 'Rejected by bulk action'; // Add a default comment
+        });
+    });
+        document.getElementById('submitapproval').addEventListener('click', handleAssign);
 
   async function init() {
     const accounts = await FetchPending();

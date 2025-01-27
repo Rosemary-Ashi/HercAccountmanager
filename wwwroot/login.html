@@ -39,7 +39,7 @@
 
             <label for="password"><b>Password</b></label>
             <input type="password" placeholder="Enter password" name="password" id="password"
-                title="Please enter strong password" required>
+                   title="Please enter strong password" required>
             <!-- <div id="password-strength"></div> -->
             <!-- <ul style="list-style-type: none;" id="password-requirements">
                 <li id="length">At least 8 characters</li>
@@ -56,11 +56,14 @@
     </form>
 
     <footer id="foot" class="footer">
-        <p>GTPM &copy; 2024</p>
+        <p>GTPM &copy; <span id="current-year"></span></p>
         <p><a style="color:whitesmoke" href="mailto:"></a></p>
     </footer>
 
     <script src="login.js"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>

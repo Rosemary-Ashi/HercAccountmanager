@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AccountManagement.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250108083302_TableAdded")]
-    partial class TableAdded
+    [Migration("20250120124926_initializeDatabase")]
+    partial class initializeDatabase
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -98,6 +98,8 @@ namespace AccountManagement.Migrations
                         .HasColumnType("nvarchar(256)");
 
                     b.HasKey("Id");
+
+                    b.HasAlternateKey("UserId");
 
                     b.HasIndex("LocationId");
 

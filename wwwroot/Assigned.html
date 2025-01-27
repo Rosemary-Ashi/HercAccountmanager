@@ -35,43 +35,46 @@
         <input type="text" id="searchWord" placeholder="Search" />
         <!--<div id="paginations-metadata">
             </div>-->
-            <table id="customertable">
-                <thead>
-                    <tr class="tablehead">
-                        <th>SN</th>
-                        <th>PIN</th>
-                        <th>Surname</th>
-                        <th>First Name</th>
-                        <th>Othername</th>
-                        <th>Location</th>
-                        <th>Email Address</th>
-                        <th>Mobile Number</th>
-                        <th>AUM</th>
-                        <th>
-                            <select id="bdOfficerFilter">
-                                <option value="">Account Manager</option>
-                            </select>
-                        </th>
-                        <th>BD Head Comment</th>
-                        <th>BD Comment</th>
-                        <th>Date</th>
-                    </tr>
+        <table id="customertable">
+            <thead>
+                <tr class="tablehead">
+                    <th>SN</th>
+                    <th>PIN</th>
+                    <th>Surname</th>
+                    <th>First Name</th>
+                    <th>Othername</th>
+                    <th>Location</th>
+                    <th>Email Address</th>
+                    <th>Mobile Number</th>
+                    <th>AUM</th>
+                    <th>
+                        <select id="bdOfficerFilter">
+                            <option value="">Account Manager</option>
+                        </select>
+                    </th>
+                    <th>BD Head Comment</th>
+                    <th>BD Comment</th>
+                    <th>Date</th>
+                </tr>
 
-                </thead>
+            </thead>
 
-                <tbody id="teamleadtable"></tbody>
+            <tbody id="teamleadtable"></tbody>
 
-            </table>
-            <!--<div id="pagination-controls"></div>-->
-</div>
+        </table>
+        <!--<div id="pagination-controls"></div>-->
+    </div>
 
     <footer id="foot" class="footer">
-        <p>GTPM &copy; 2024</p>
+        <p>GTPM &copy; <span id="current-year"></span></p>
         <p><a style="color:whitesmoke" href="mailto:"></a></p>
     </footer>
 
     <script src="bdTeamLead.js" type="text/javascript"></script>
-    
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
 </body>
 
 </html>

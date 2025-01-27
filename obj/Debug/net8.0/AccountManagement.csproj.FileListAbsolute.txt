@@ -510,10 +510,10 @@ C:\Account Reassigning\HercAccountmanager\obj\Debug\net8.0\staticwebassets\msbui
 C:\Account Reassigning\HercAccountmanager\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.AccountManagement.props
 C:\Account Reassigning\HercAccountmanager\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.AccountManagement.props
 C:\Account Reassigning\HercAccountmanager\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Account Reassigning\HercAccountmanager\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Account Reassigning\HercAccountmanager\obj\Debug\net8.0\AccountM.1FAB8D50.Up2Date
 C:\Account Reassigning\HercAccountmanager\obj\Debug\net8.0\AccountManagement.dll
 C:\Account Reassigning\HercAccountmanager\obj\Debug\net8.0\refint\AccountManagement.dll
 C:\Account Reassigning\HercAccountmanager\obj\Debug\net8.0\AccountManagement.pdb
 C:\Account Reassigning\HercAccountmanager\obj\Debug\net8.0\AccountManagement.genruntimeconfig.cache
 C:\Account Reassigning\HercAccountmanager\obj\Debug\net8.0\ref\AccountManagement.dll
+C:\Account Reassigning\HercAccountmanager\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

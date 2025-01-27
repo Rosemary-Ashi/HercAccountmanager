@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       const BDHeaddata = await response.json();
-      console.log('BD Head Fetched Data', BDHeaddata);
       return BDHeaddata;
     } catch (error) {
       console.error('Failed to fetch data:', error);

@@ -96,6 +96,8 @@ namespace AccountManagement.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasAlternateKey("UserId");
+
                     b.HasIndex("LocationId");
 
                     b.HasIndex("NormalizedEmail")
