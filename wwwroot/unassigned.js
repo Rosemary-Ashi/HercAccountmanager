@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('#username').textContent = usernamess; //Display username
     document.querySelector('#location').textContent = locationss; //Display location
 
-    async function FetchCustomers(pageNumber = 1, pageSize = 10) {
+    async function FetchCustomers(pageNumber = 1, pageSize = 20) {
         try {
             const response = await fetch(`/accountmanager/api/Customer/${locationIdss}/Unassigned?pageNumber=${pageNumber}&pageSize=${pageSize}`);
             if (!response.ok) {

@@ -16,11 +16,11 @@ namespace AccountManagement.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetCustomers(int pageNumber = 1, int pageSize = 10)
+        public async Task<IActionResult> GetCustomers(int pageNumber = 1, int pageSize = 20)
         {
             // Ensure pageNumber and pageSize are valid
             pageNumber = pageNumber < 1 ? 1 : pageNumber;
-            pageSize = pageSize < 1 ? 10 : pageSize;
+            pageSize = pageSize < 1 ? 20 : pageSize;
 
             // Fetch total count for metadata
             var totalRecords = await _context.Customers.CountAsync();
@@ -84,11 +84,11 @@ namespace AccountManagement.Controllers
         //    return Ok(customers);
         //}
         [HttpGet("{id}/ByAgent")]
-        public async Task<ActionResult<IEnumerable<Customer>>> GetCustomersByAgent(string id, int pageNumber = 1, int pageSize = 10)
+        public async Task<ActionResult<IEnumerable<Customer>>> GetCustomersByAgent(string id, int pageNumber = 1, int pageSize = 20)
         {
             // Ensure pageNumber and pageSize are valid
             pageNumber = pageNumber < 1 ? 1 : pageNumber;
-            pageSize = pageSize < 1 ? 10 : pageSize;
+            pageSize = pageSize < 1 ? 20 : pageSize;
 
             // Fetch total count for metadata
             var totalRecords = await _context.Customers
@@ -156,11 +156,11 @@ namespace AccountManagement.Controllers
         //    return Ok(customers);
         //}
         [HttpGet("{id}/Unassigned")]
-        public async Task<ActionResult<IEnumerable<Customer>>> GetUnassignedCustomersByLocation(int id, int pageNumber = 1, int pageSize = 10)
+        public async Task<ActionResult<IEnumerable<Customer>>> GetUnassignedCustomersByLocation(int id, int pageNumber = 1, int pageSize = 20)
         {
             // Ensure pageNumber and pageSize are valid
             pageNumber = pageNumber < 1 ? 1 : pageNumber;
-            pageSize = pageSize < 1 ? 10 : pageSize;
+            pageSize = pageSize < 1 ? 20 : pageSize;
 
             // Fetch total count for metadata
             var totalRecords = await _context.Customers

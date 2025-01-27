@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xtSdINTfW+CtS/WxrkSbC9GosBfkRyrf1Wn3peyFAgM=",
+  "Hash": "9CpwIJ3KURpYVUUMqYD+0Ln+wsGRfVL6z0aNrIAIkUg=",
   "Source": "AccountManagement",
   "BasePath": "_content/AccountManagement",
   "Mode": "Default",
@@ -115,8 +115,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "muaneou2ss",
-      "Integrity": "Utv8O6kwrrmoAfAE9g0hvIyobfLdLE1pQNqWVWGg5Ho=",
+      "Fingerprint": "ahb3o53ody",
+      "Integrity": "IidZIt2wfwPkqOlsT/0izodLK+HFpxjPsbdQlAhUxm0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\admindashboard.js"
@@ -1039,8 +1039,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "aqvq0br8hn",
-      "Integrity": "3iBy/VDX+lqsDTygst51+1V4t0zgTDFJsug027244b4=",
+      "Fingerprint": "750hkgkkoy",
+      "Integrity": "BdGuOQlBvFq1Q0jg80k7+yc5MCHeeLqFS9bei62pUNY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\bdofficer.js"
@@ -1081,8 +1081,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "4a86t9eaw8",
-      "Integrity": "lC+T9p/QiRGpilQz0irOhhN56r4Eqgk/xypH8W7Hjys=",
+      "Fingerprint": "9i7dndsiwv",
+      "Integrity": "QXIj4PgLK+o9uaKbZ5KbXqCGWc/VY6M38xE9FukMjjc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\bdTeamLead.js"
@@ -1144,8 +1144,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "50537p6huy",
-      "Integrity": "FUdSvvGfpTR3gmBgt+ObD16YYC4YbddGtXnCjZqehME=",
+      "Fingerprint": "yyg1gusum6",
+      "Integrity": "KpTp2THkWz1FLuF2o9GgXoTVhOUriwCf0V1S5O1nO7A=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\customer.js"
@@ -1648,8 +1648,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "yti5jlbfvn",
-      "Integrity": "lsVQ1uGH6qVrgwSeCyErbJ/1Td6HjHck2+I/17JM7Bo=",
+      "Fingerprint": "8izwxfnhxb",
+      "Integrity": "wIhev7Rdn2VEE0GRBrCwj7+Zh3UksOzSca5DXZ82PJ4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\unassigned.js"
@@ -1987,6 +1987,51 @@
       ]
     },
     {
+      "Route": "admindashboard.ahb3o53ody.js",
+      "AssetFile": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\admindashboard.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6533"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IidZIt2wfwPkqOlsT/0izodLK+HFpxjPsbdQlAhUxm0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 Jan 2025 12:21:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ahb3o53ody"
+        },
+        {
+          "Name": "label",
+          "Value": "admindashboard.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IidZIt2wfwPkqOlsT/0izodLK+HFpxjPsbdQlAhUxm0="
+        }
+      ]
+    },
+    {
       "Route": "adminDashboard.g48fp662hj.html",
       "AssetFile": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\adminDashboard.html",
       "Selectors": [],
@@ -2087,11 +2132,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Utv8O6kwrrmoAfAE9g0hvIyobfLdLE1pQNqWVWGg5Ho=\""
+          "Value": "\"IidZIt2wfwPkqOlsT/0izodLK+HFpxjPsbdQlAhUxm0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 24 Jan 2025 11:33:15 GMT"
+          "Value": "Mon, 27 Jan 2025 12:21:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2101,52 +2146,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Utv8O6kwrrmoAfAE9g0hvIyobfLdLE1pQNqWVWGg5Ho="
-        }
-      ]
-    },
-    {
-      "Route": "admindashboard.muaneou2ss.js",
-      "AssetFile": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\admindashboard.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "6533"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Utv8O6kwrrmoAfAE9g0hvIyobfLdLE1pQNqWVWGg5Ho=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 24 Jan 2025 11:33:15 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "muaneou2ss"
-        },
-        {
-          "Name": "label",
-          "Value": "admindashboard.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Utv8O6kwrrmoAfAE9g0hvIyobfLdLE1pQNqWVWGg5Ho="
+          "Value": "sha256-IidZIt2wfwPkqOlsT/0izodLK+HFpxjPsbdQlAhUxm0="
         }
       ]
     },
@@ -5595,7 +5595,7 @@
       ]
     },
     {
-      "Route": "bdofficer.aqvq0br8hn.js",
+      "Route": "bdofficer.750hkgkkoy.js",
       "AssetFile": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\bdofficer.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5613,11 +5613,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"3iBy/VDX+lqsDTygst51+1V4t0zgTDFJsug027244b4=\""
+          "Value": "\"BdGuOQlBvFq1Q0jg80k7+yc5MCHeeLqFS9bei62pUNY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 24 Jan 2025 12:02:59 GMT"
+          "Value": "Mon, 27 Jan 2025 12:20:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5627,7 +5627,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "aqvq0br8hn"
+          "Value": "750hkgkkoy"
         },
         {
           "Name": "label",
@@ -5635,7 +5635,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-3iBy/VDX+lqsDTygst51+1V4t0zgTDFJsug027244b4="
+          "Value": "sha256-BdGuOQlBvFq1Q0jg80k7+yc5MCHeeLqFS9bei62pUNY="
         }
       ]
     },
@@ -5740,11 +5740,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"3iBy/VDX+lqsDTygst51+1V4t0zgTDFJsug027244b4=\""
+          "Value": "\"BdGuOQlBvFq1Q0jg80k7+yc5MCHeeLqFS9bei62pUNY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 24 Jan 2025 12:02:59 GMT"
+          "Value": "Mon, 27 Jan 2025 12:20:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5754,12 +5754,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-3iBy/VDX+lqsDTygst51+1V4t0zgTDFJsug027244b4="
+          "Value": "sha256-BdGuOQlBvFq1Q0jg80k7+yc5MCHeeLqFS9bei62pUNY="
         }
       ]
     },
     {
-      "Route": "bdTeamLead.4a86t9eaw8.js",
+      "Route": "bdTeamLead.9i7dndsiwv.js",
       "AssetFile": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\bdTeamLead.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5777,11 +5777,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"lC+T9p/QiRGpilQz0irOhhN56r4Eqgk/xypH8W7Hjys=\""
+          "Value": "\"QXIj4PgLK+o9uaKbZ5KbXqCGWc/VY6M38xE9FukMjjc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 24 Jan 2025 12:10:07 GMT"
+          "Value": "Mon, 27 Jan 2025 12:20:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5791,7 +5791,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4a86t9eaw8"
+          "Value": "9i7dndsiwv"
         },
         {
           "Name": "label",
@@ -5799,7 +5799,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-lC+T9p/QiRGpilQz0irOhhN56r4Eqgk/xypH8W7Hjys="
+          "Value": "sha256-QXIj4PgLK+o9uaKbZ5KbXqCGWc/VY6M38xE9FukMjjc="
         }
       ]
     },
@@ -5904,11 +5904,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"lC+T9p/QiRGpilQz0irOhhN56r4Eqgk/xypH8W7Hjys=\""
+          "Value": "\"QXIj4PgLK+o9uaKbZ5KbXqCGWc/VY6M38xE9FukMjjc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 24 Jan 2025 12:10:07 GMT"
+          "Value": "Mon, 27 Jan 2025 12:20:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5918,7 +5918,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-lC+T9p/QiRGpilQz0irOhhN56r4Eqgk/xypH8W7Hjys="
+          "Value": "sha256-QXIj4PgLK+o9uaKbZ5KbXqCGWc/VY6M38xE9FukMjjc="
         }
       ]
     },
@@ -6087,51 +6087,6 @@
       ]
     },
     {
-      "Route": "customer.50537p6huy.js",
-      "AssetFile": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\customer.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "6829"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"FUdSvvGfpTR3gmBgt+ObD16YYC4YbddGtXnCjZqehME=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 24 Jan 2025 12:23:06 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "50537p6huy"
-        },
-        {
-          "Name": "label",
-          "Value": "customer.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-FUdSvvGfpTR3gmBgt+ObD16YYC4YbddGtXnCjZqehME="
-        }
-      ]
-    },
-    {
       "Route": "customer.js",
       "AssetFile": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\customer.js",
       "Selectors": [],
@@ -6150,11 +6105,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"FUdSvvGfpTR3gmBgt+ObD16YYC4YbddGtXnCjZqehME=\""
+          "Value": "\"KpTp2THkWz1FLuF2o9GgXoTVhOUriwCf0V1S5O1nO7A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 24 Jan 2025 12:23:06 GMT"
+          "Value": "Mon, 27 Jan 2025 12:19:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6164,7 +6119,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-FUdSvvGfpTR3gmBgt+ObD16YYC4YbddGtXnCjZqehME="
+          "Value": "sha256-KpTp2THkWz1FLuF2o9GgXoTVhOUriwCf0V1S5O1nO7A="
+        }
+      ]
+    },
+    {
+      "Route": "customer.yyg1gusum6.js",
+      "AssetFile": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\customer.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6829"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KpTp2THkWz1FLuF2o9GgXoTVhOUriwCf0V1S5O1nO7A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 Jan 2025 12:19:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yyg1gusum6"
+        },
+        {
+          "Name": "label",
+          "Value": "customer.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KpTp2THkWz1FLuF2o9GgXoTVhOUriwCf0V1S5O1nO7A="
         }
       ]
     },
@@ -8018,6 +8018,51 @@
       ]
     },
     {
+      "Route": "unassigned.8izwxfnhxb.js",
+      "AssetFile": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\unassigned.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wIhev7Rdn2VEE0GRBrCwj7+Zh3UksOzSca5DXZ82PJ4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 Jan 2025 12:18:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8izwxfnhxb"
+        },
+        {
+          "Name": "label",
+          "Value": "unassigned.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wIhev7Rdn2VEE0GRBrCwj7+Zh3UksOzSca5DXZ82PJ4="
+        }
+      ]
+    },
+    {
       "Route": "unassigned.html",
       "AssetFile": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\unassigned.html",
       "Selectors": [],
@@ -8073,11 +8118,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"lsVQ1uGH6qVrgwSeCyErbJ/1Td6HjHck2+I/17JM7Bo=\""
+          "Value": "\"wIhev7Rdn2VEE0GRBrCwj7+Zh3UksOzSca5DXZ82PJ4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 24 Jan 2025 10:50:23 GMT"
+          "Value": "Mon, 27 Jan 2025 12:18:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8087,52 +8132,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-lsVQ1uGH6qVrgwSeCyErbJ/1Td6HjHck2+I/17JM7Bo="
-        }
-      ]
-    },
-    {
-      "Route": "unassigned.yti5jlbfvn.js",
-      "AssetFile": "C:\\Account Reassigning\\HercAccountmanager\\wwwroot\\unassigned.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "9780"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"lsVQ1uGH6qVrgwSeCyErbJ/1Td6HjHck2+I/17JM7Bo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 24 Jan 2025 10:50:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "yti5jlbfvn"
-        },
-        {
-          "Name": "label",
-          "Value": "unassigned.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-lsVQ1uGH6qVrgwSeCyErbJ/1Td6HjHck2+I/17JM7Bo="
+          "Value": "sha256-wIhev7Rdn2VEE0GRBrCwj7+Zh3UksOzSca5DXZ82PJ4="
         }
       ]
     },

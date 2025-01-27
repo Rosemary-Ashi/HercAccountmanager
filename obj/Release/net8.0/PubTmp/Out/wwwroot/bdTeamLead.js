@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /*****************************************BEGINNING OF ASSIGNED API***************************************************/
 
-    async function FetchCustomers(pageNumber = 1, pageSize = 10) {
+    async function FetchCustomers(pageNumber = 1, pageSize = 20) {
         try {
             const response = await fetch(`/accountmanager/api/Customer/${locationIdss}/Assigned?pageNumber=${pageNumber}&pageSize=${pageSize}`);
             if (!response.ok) {
@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /*****************************************BEGINNING OF DASHBOARD API***************************************************/
 
-    async function FetchCustomerDashboard(pageNumber = 1, pageSize = 10) {
+    async function FetchCustomerDashboard(pageNumber = 1, pageSize = 20) {
         try {
             const response = await fetch(`/accountmanager/api/Customer/?pageNumber=${pageNumber}&pageSize=${pageSize}`);
             if (!response.ok) {
